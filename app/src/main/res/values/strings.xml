@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NavigationSample</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="gotoactivity1">Go to Activity1</string>
+</resources>
