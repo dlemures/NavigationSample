@@ -5,17 +5,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Activity1">
+    tools:context=".app.Fragment2">
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/gotomainactivity" />
+        android:text="@string/gotofragment3" />
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="80dp"
+        android:gravity="center"
+        tools:text="Main Fragment 2 Text" />
 
 </LinearLayout>

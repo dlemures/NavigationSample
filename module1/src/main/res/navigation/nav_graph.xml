@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment3">
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.dlemures.navigationsample.module1.Fragment3"
+        android:label="Fragment3"
+        tools:layout="@layout/fragment_fragment3"/>
 
 </resources>

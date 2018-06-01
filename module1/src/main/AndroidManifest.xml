@@ -4,9 +4,9 @@
 
     <application>
         <activity
-            android:name=".Activity1"
-            android:label="@string/title_activity_1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".ModuleActivity"
+            android:label="@string/title_activity_module"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

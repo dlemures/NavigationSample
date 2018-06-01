@@ -2,20 +2,28 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/fragment1">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.dlemures.navigationsample.app.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main">
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.dlemures.navigationsample.app.Fragment1"
+        android:label="fragment_fragment1"
+        tools:layout="@layout/fragment_fragment1" >
         <action
-            android:id="@+id/action_mainActivity_to_activity1"
-            app:destination="@id/activity1" />
-    </activity>
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.dlemures.navigationsample.app.Fragment2"
+        android:label="fragment_fragment2"
+        tools:layout="@layout/fragment_fragment2" >
+        <action
+            android:id="@+id/action_fragment2_to_moduleActivity"
+            app:destination="@id/moduleActivity" />
+    </fragment>
     <activity
-        android:id="@+id/activity1"
-        android:name="com.dlemures.navigationsample.module1.Activity1"
-        android:label="activity_1"
-        tools:layout="@layout/activity_1" />
+        android:id="@+id/moduleActivity"
+        android:name="com.dlemures.navigationsample.module1.ModuleActivity"
+        android:label="ModuleActivity" />
 </navigation>
